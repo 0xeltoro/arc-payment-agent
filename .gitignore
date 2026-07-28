@@ -1,0 +1,10 @@
+# Env
+.env
+
+# Foundry
+out/
+cache/
+broadcast/
+
+# Python
+__pycache__/
