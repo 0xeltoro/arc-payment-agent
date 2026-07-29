@@ -29,7 +29,7 @@ cannot alter policy or withdraw funds.
 ## Current state
 - [x] Repo initialized
 - [x] Wallet funded with testnet USDC
-- [ ] Foundry project scaffolded
-- [ ] PaymentVault contract
+- [x] Foundry project scaffolded
+- [x] PaymentVault contract
 - [ ] Agent
 - [ ] Dashboard
