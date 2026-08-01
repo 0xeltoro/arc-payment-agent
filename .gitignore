@@ -8,3 +8,5 @@ broadcast/
 
 # Python
 __pycache__/
+agent/.venv/
+agent/payments.db

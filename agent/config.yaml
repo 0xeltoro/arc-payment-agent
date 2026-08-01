@@ -1,0 +1,12 @@
+# Human-editable payment schedule for the agent.
+# rpc_url, vault_address, and the agent's private key are NOT set here —
+# they come from the repo-root .env (ARC_RPC_URL, VAULT_ADDRESS, AGENT_PRIVATE_KEY)
+# so secrets and per-environment config never live in this checked-in file.
+
+tick_seconds: 15
+
+payments:
+  - name: "server rent"
+    to: "0x1Cfbb4Bbd1Bf72A7ca6e5a450aEE733B5E9DC2C3"
+    amount_usdc: 2.5
+    schedule: "every 2 minutes"

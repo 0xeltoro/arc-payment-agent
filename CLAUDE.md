@@ -31,5 +31,5 @@ cannot alter policy or withdraw funds.
 - [x] Wallet funded with testnet USDC
 - [x] Foundry project scaffolded
 - [x] PaymentVault contract
-- [ ] Agent
+- [x] Agent
 - [ ] Dashboard
