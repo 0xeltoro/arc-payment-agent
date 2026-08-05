@@ -10,14 +10,12 @@ Agents that hold funds usually keep their spending limits in their own code — 
 
 The vault holds USDC. The agent's key can call exactly one function: `executePayment`. The contract checks recipient allowlist, per-tx cap, daily cap and pause on every call. Policy changes, adding recipients and withdrawals are owner-only. A compromised agent key caps damage at one day's limit, to pre-approved addresses.
 
-```mermaid
-graph TD
-    owner["owner (EOA)"]
-    agent["agent (EOA)"]
-    vault["PaymentVault (holds USDC)"]
-
-    owner -->|"setPolicy, setAgent, addRecipient, removeRecipient, pause/unpause, withdraw"| vault
-    agent -->|"executePayment(to, amount) - the agent's only capability"| vault
+```text
+   owner                                  agent
+   |  setPolicy, addRecipient,            |  executePayment(to, amount)
+   |  pause/unpause, withdraw             |  <- the only call the agent can make
+   v                                      v
+           PaymentVault (holds USDC)
 ```
 
 ## Live on Arc testnet
