@@ -14,10 +14,10 @@ The vault holds USDC. The agent's key can call exactly one function: `executePay
 graph TD
     owner["owner (EOA)"]
     agent["agent (EOA)"]
-    vault["PaymentVault<br/>holds USDC · allowlist · maxPerTx<br/>dailyLimit · spentToday · paused"]
+    vault["PaymentVault (holds USDC)"]
 
-    owner -->|"setPolicy, setAgent,<br/>addRecipient, removeRecipient,<br/>pause/unpause, withdraw"| vault
-    agent -->|"executePayment(to, amount)<br/>— the agent's only capability"| vault
+    owner -->|"setPolicy, setAgent, addRecipient, removeRecipient, pause/unpause, withdraw"| vault
+    agent -->|"executePayment(to, amount) - the agent's only capability"| vault
 ```
 
 ## Live on Arc testnet
