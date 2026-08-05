@@ -26,10 +26,16 @@ cannot alter policy or withdraw funds.
 - Never hardcode addresses or keys — use .env
 - Never commit .env
 
+## Environment
+- Node isn't on the default WSL PATH here — it's at
+  `~/.local/opt/node-v22.14.0-linux-x64/bin`. Prefix shell commands that need
+  node/npm/npx with:
+  `export PATH="$HOME/.local/opt/node-v22.14.0-linux-x64/bin:$PATH"`
+
 ## Current state
 - [x] Repo initialized
 - [x] Wallet funded with testnet USDC
 - [x] Foundry project scaffolded
 - [x] PaymentVault contract
 - [x] Agent
-- [ ] Dashboard
+- [x] Dashboard
