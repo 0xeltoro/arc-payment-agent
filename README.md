@@ -1,5 +1,7 @@
 # Arc Payment Agent
 
+**Live demo:** https://arc-payment-agent-beta.vercel.app
+
 An autonomous agent that sends scheduled USDC payments from a vault whose spending policy is enforced onchain, not by the agent itself.
 
 ## The problem
